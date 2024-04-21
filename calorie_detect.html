@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/calorie.css">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Calorie Detector</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="calorie_cal.html">Calorie Calculator</a>
+            
+        </div>
+        <span onclick="openNav()" class="open" id="open">&#9776</span>
+
+        <!--Main-->
+        <div class="heading">Calorie Detector</div>
+        <button type="button" onclick="init()" class="btn">Start</button>
+        <button type="button" onclick="window.location.reload()" class="btn">Stop</button>
+        <div id="webcam-container"> </div>
+        <div id="label-container"></div>
+
+        <div class="info">
+            <p class="regular">The NutriTrack will detect the food item and show it's caloric value.</p>
+            <p class="regular">
+                As of now NutriTrack can detect handful of items like-
+                <li>Apple</li>
+                <li>Egg</li>
+                <li>Orange</li>
+                <li>Carrot</li>
+                <li>Cabbage</li>
+            </p>
+        </div>
+          
+    <!--All Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/reco_food.js"></script>
+
+</body>
+</html>

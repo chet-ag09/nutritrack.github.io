@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>NutriTrack</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="calorie_detect.html">Calorie Detector</a>
+            <a href="calorie_cal.html">Calorie Calculator</a>
+        </div>
+        <span onclick="openNav()" class="open" id="open">&#9776</span>
+
+        <!--Main-->
+        <h1>Welcome to <span class="logo">NutriTrack!</span></h1>
+        <a href="calorie_detect.html"><button class="btn">Calorie Dectector</button></a>
+        <a href="calorie_cal.html"><button class="btn">Calorie Calculator</button></a>
+
+        <p>SCROLL</p>
+        <div class="line"></div>
+
+        <section id="about">
+        <h1>About</h1>
+        <p class="regular">NutriTrack is a web app that provides insight into your calorie intake.<br> It has two functions-Calorie Detector and Calorie Calculator.</p>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

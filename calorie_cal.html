@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calorie_calc.css">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+
+    <title>Calorie Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="calorie_detect.html">Calorie Detector</a>
+        </div>
+        <span onclick="openNav()" class="open" id="open">&#9776</span>
+
+        <!--Main-->
+
+          <div class="calculator">
+            <div class="heading">Calorie Calculator</div>
+            <div class="food-entry">
+              <label for="food-name">Food Name:</label>
+              <input type="text" id="food-name" placeholder="Enter food name">
+              <button type="button" onclick="addCalorie()" class="btn">Add</button>
+            </div>
+            <ul id="food-list"></ul>
+            <p id="total-calories" class="total-calories">Total Calories: 0</p>
+            <p class="regular">Add consumed food items to calculate total calories consumed.</p>
+            <p class="regular">It has the data of 6 items
+              <li style="color: green;">Apple</li>
+              <li style="color: green;">Orange</li>
+              <li style="color: green;">Sandwich</li>
+              <li style="color: green;">Pizza</li>
+              <li style="color: green;">Lasagna</li>
+              <li style="color: green;">Waffles</li>
+            </p>
+          </div>
+          
+    <!--All Scripts-->
+    <script src="js/calorie_data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
